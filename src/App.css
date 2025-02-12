@@ -1,0 +1,108 @@
+*{
+  padding: 0;
+}
+
+
+
+/* ------------ ESTILOS NAV BAR------------------- */
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-bar-link{
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  margin-top: 30px;
+}
+
+.link{
+  color: black;
+  text-decoration: none;
+}
+.link:hover{
+  font-weight: bold;
+}
+
+
+
+/* ------------------- ESTILOS CONTACTO ------------ */
+
+.seccion-contacto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.div-info-contactoSup{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.div-info-contacto{
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+  font-weight: 100;
+}
+.form-contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 500px;
+}
+
+.div-form-contactoSup{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.div-form-contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.div-form-contacto1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-contacto{
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.textArea-contacto{
+  height: 200px;
+  border: 1px solid black;
+  padding-left: 2px;
+  padding-top: 2px;
+  border-radius: 3px;
+}
+
+.boton-contacto{
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+  width: 125px;
+  padding: 10px;
+}
+
+.boton-contacto:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.iframe{
+  height: 350px;
+  width: 500px;
+  border-radius: 15px;
+  border: 1px solid black;
+  margin-top: 5%;
+}

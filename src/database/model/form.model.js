@@ -23,6 +23,6 @@ const formSchema = new mongoose.Schema({
     }
 })
 
-const formModel = mongoose.model("formularioPitu", formSchema)
+const formModel = mongoose.model("formularioPitu", formSchema, "formularioPitu")
 
 export default formModel

@@ -2,7 +2,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { useState, useEffect } from "react";
 
 const Contacto = () => {
-  const [formulario, setFormulario] = useState({
+  const [formData, setFormData] = useState({
     nombre: "",
     apellido: "",
     empresa: "",
@@ -10,35 +10,49 @@ const Contacto = () => {
     mensaje: "",
   });
 
-  const [isServerUp, setIsServerUp] = useState(true);
+  const [serverStatus, setServerStatus] = useState(null);  
 
-  useEffect(() => {
-    const checkServerStatus = async () => {
-      try {
-        const response = await fetch("http://localhost:8080/usuarios");
-        if (response.ok) {
-          setIsServerUp(true);
-          const storedData = JSON.parse(localStorage.getItem("formularios"));
-          if (storedData && storedData.length > 0) {
-            await sendData(storedData);
-          }
-        } else {
-          setIsServerUp(false);
-        }
-      } catch (error) {
-        setIsServerUp(false);
-        console.log("Hubo un error al comprobar el estado del servidor", error);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const serverOnline = await checkServerStatus();
+
+    if (serverOnline) {
+      sendDataToServer(formData);
+    } else {
+      localStorage.setItem("formData", JSON.stringify(formData));
+      alert("Formulario guardado localmente. Se enviará cuando el servidor esté disponible.");
+    }
+  };
+
+  const checkServerStatus = async () => {
+    try {
+      const response = await fetch("http://localhost:8080/usuarios", {
+        method: "GET",
+      });
+
+      if (response.ok) {
+        setServerStatus(true);
+        return true;
+      } else {
+        setServerStatus(false);
+        return false;
       }
-    };
+    } catch (error) {
+      setServerStatus(false);
+      return false;
+    }
+  };
 
-    const interval = setInterval(checkServerStatus, 10000);
-    checkServerStatus();
-
-    return () => clearInterval(interval);
-  }, []);
-
-
-  const sendData = async (data) => {
+  const sendDataToServer = async (data) => {
     try {
       const response = await fetch("http://localhost:8080/usuarios", {
         method: "POST",
@@ -48,40 +62,31 @@ const Contacto = () => {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
       if (response.ok) {
-        localStorage.removeItem("formularios");
-        console.log("Datos enviados correctamente");
+        alert("Formulario enviado con éxito");
+        localStorage.removeItem("formData");  
       } else {
-        console.log("Hubo un error al enviar los datos");
+        alert("Hubo un error al enviar el formulario.");
       }
     } catch (error) {
-      console.log("Error al enviar los datos", error);
+      console.error("Error al enviar los datos:", error);
     }
   };
 
-  const handleChange = (e) => {
-    const updatedFormulario = {
-      ...formulario,
-      [e.target.name]: e.target.value,
+  
+  useEffect(() => {
+    const enviarDatosGuardados = async () => {
+      const storedData = JSON.parse(localStorage.getItem("formData"));
+      if (storedData) {
+        const serverOnline = await checkServerStatus();
+        if (serverOnline) {
+          sendDataToServer(storedData);   
+        }
+      }
     };
-    setFormulario(updatedFormulario);
-  };
 
- 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-
-    if (!isServerUp) {
-      const storedData = JSON.parse(localStorage.getItem("formularios")) || [];
-      storedData.push(formulario); 
-      localStorage.setItem("formularios", JSON.stringify(storedData));
-      console.log("Datos guardados en localStorage porque el servidor está apagado");
-      return;
-    }
-    await sendData([formulario]);
-  };
+    enviarDatosGuardados();
+  }, []);  
 
   return (
     <section className="seccion-contacto">
@@ -91,21 +96,18 @@ const Contacto = () => {
         <div className="div-info-contactoSup">
           <div className="div-info-contacto">
             <i className="bi bi-geo-alt-fill">
-              {" "}
               Nuestra direccion: Rivadavia 195 | San Isidro | Piso 5 | Depto B
             </i>
           </div>
 
           <div className="div-info-contacto">
             <i className="bi bi-telephone">
-              {" "}
               Nuestro Celular/Whatsapp: +54 9 11 3215-8091
             </i>
           </div>
 
           <div className="div-info-contacto">
             <i className="bi bi-envelope">
-              {" "}
               Nuestro email: blaksleyaznar@gmail.com
             </i>
           </div>
@@ -128,7 +130,6 @@ const Contacto = () => {
               className="input-contacto"
               name="nombre"
               onChange={handleChange}
-              value={formulario.nombre}
             />
           </div>
           <div className="div-form-contacto1">
@@ -140,7 +141,6 @@ const Contacto = () => {
               className="input-contacto"
               name="apellido"
               onChange={handleChange}
-              value={formulario.apellido}
             />
           </div>
         </div>
@@ -153,7 +153,6 @@ const Contacto = () => {
           className="input-contacto"
           name="empresa"
           onChange={handleChange}
-          value={formulario.empresa}
         />
 
         <label htmlFor="">Email *</label>
@@ -164,7 +163,6 @@ const Contacto = () => {
           className="input-contacto"
           name="email"
           onChange={handleChange}
-          value={formulario.email}
         />
 
         <label htmlFor="">Mensaje *</label>
@@ -174,8 +172,8 @@ const Contacto = () => {
           name="mensaje"
           required
           onChange={handleChange}
-          value={formulario.mensaje}
         ></textarea>
+
         <button type="submit" className="boton-contacto">
           Enviar
         </button>

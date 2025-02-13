@@ -3,26 +3,26 @@ import mongoose from "mongoose"
 const formSchema = new mongoose.Schema({
     nombre:{
         type: String,
-        require
+        required:true
     },
     apellido:{
         type: String,
-        require
+        required:true
     },
     empresa:{
         type: String,
-        require
+        required:true
     },
     email:{
         type: String,
-        require
+        required:true
     },
     mensaje:{
         type: String,
-        require
+        required:true
     }
 })
 
-const formModel = mongoose.model("formulario", formSchema)
+const formModel = mongoose.model("formularioPitu", formSchema)
 
 export default formModel

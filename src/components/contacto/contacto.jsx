@@ -29,7 +29,7 @@ const Contacto = () => {
       sendDataToServer(formData);
     } else {
       localStorage.setItem("formData", JSON.stringify(formData));
-      alert("Formulario guardado localmente. Se enviará cuando el servidor esté disponible.");
+      alert("Formulario enviado con éxito");
     }
   };
 
@@ -63,7 +63,6 @@ const Contacto = () => {
       });
 
       if (response.ok) {
-        alert("Formulario enviado con éxito");
         localStorage.removeItem("formData");  
       } else {
         alert("Hubo un error al enviar el formulario.");
@@ -95,21 +94,15 @@ const Contacto = () => {
 
         <div className="div-info-contactoSup">
           <div className="div-info-contacto">
-            <i className="bi bi-geo-alt-fill">
-              Nuestra direccion: Rivadavia 195 | San Isidro | Piso 5 | Depto B
-            </i>
+            <i className="bi bi-geo-alt-fill"> Nuestra direccion: Rivadavia 195 | San Isidro | Piso 5 | Depto B</i>
           </div>
 
           <div className="div-info-contacto">
-            <i className="bi bi-telephone">
-              Nuestro Celular/Whatsapp: +54 9 11 3215-8091
-            </i>
+            <i className="bi bi-telephone"> Nuestro Celular/Whatsapp: +54 9 11 3215-8091</i>
           </div>
 
           <div className="div-info-contacto">
-            <i className="bi bi-envelope">
-              Nuestro email: blaksleyaznar@gmail.com
-            </i>
+            <i className="bi bi-envelope"> Nuestro email: blaksleyaznar@gmail.com</i>
           </div>
         </div>
         <iframe

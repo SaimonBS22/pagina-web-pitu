@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { useState } from "react"
 import { motion } from "framer-motion"
 
 const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
@@ -10,7 +9,7 @@ const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
         <section onMouseEnter={showMenu} onMouseLeave={hideMenu} >
             <nav className="nav-bar"> 
                 <div className="nav-bar-logo">
-                    <h2 className="h2-logo">Logo</h2>
+                    <img src="/imagenes/logo2.png" alt="Logo" className="img-logo" />
                 </div>
 
                 <div className="nav-bar-link">
@@ -21,7 +20,6 @@ const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
                     <Link to="/contacto" className="link" onMouseEnter={hideMenu} >Contacto</Link> 
                 </div>
             </nav>
-            <hr />
 
             <div className="menu-hamburguesa-container">
             {isMenuVisible && (

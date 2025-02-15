@@ -4,15 +4,31 @@ import AreasDePractica from './components/areasPracticas/areasPracticas.jsx'
 import SobreNosotros from './components/sobreNosotros/sobreNosotros.jsx'
 import DañosYPerjuicios from './components/dañosPerjuicios/dañosPerjuicios.jsx'
 import Contacto from './components/contacto/contacto.jsx'
+import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 function App() {
 
+  const [isMenuVisible, setIsMenuVisible] = useState(true);
+
+  const hideMenu = () => {
+    setIsMenuVisible(false);
+  };
+
+  const showMenu = () => {
+    setIsMenuVisible(true);
+  };
+
+
+
   return (
     <>
     <BrowserRouter>
-      <NavBar/>
+      <NavBar  isMenuVisible={isMenuVisible}
+        showMenu={showMenu}
+        hideMenu={hideMenu}/>
+  
       <Routes>
         <Route path='/inicio' element={<Inicio/>}></Route>
         <Route path="/sobreNosotros" element={<SobreNosotros/>}></Route>

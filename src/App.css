@@ -18,24 +18,50 @@ li{
 }
 
 /* ------------------- ESTILOS INICIO ----------------------- */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Puedes ajustarlo según sea necesario */
+  overflow: hidden;
+}
 
 .video-inicio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* O 'cover' según el efecto que quieras */
   position: absolute;
-  width: 100%;    
-  height: 500px; 
-  object-fit: cover;
+  transition: opacity 1s ease-in-out; /* Transición suave */
 }
+
+.visible{
+  opacity: 1;
+  z-index: 2;
+}
+.next-video{
+  opacity: 0;
+  z-index: 1;
+}
+.fade-in{
+  opacity: 1 !important;
+  z-index: 3;
+}
+.fade-out{
+  opacity: 0 !important;
+  z-index: 1;
+}
+
+
 .h3-inicio{
   position: absolute;
   z-index: 999;
-  top: 250px;
-  left: 90px;
+  top: 200px;
+  left: 80px;
   color: white;
 }
 .p-inicio{
   position: absolute;
-  top: 300px;
-  left: 90px;
+  top: 250px;
+  left: 80px;
   z-index: 999;
   color: white;
 }

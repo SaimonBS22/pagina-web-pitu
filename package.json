@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://saimonbs22.github.io/pagina-web-pitu",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -10,6 +10,7 @@ import Whatsapp from './components/whatsapp/whatsapp.jsx'
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
+import Footer from './components/footer/footer.jsx'
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
         <Route path='/derecho-civil' element={<DerechoCivil/>}></Route>
       </Routes>
       <Whatsapp/>
+      <Footer/>
     </BrowserRouter>
     </>
   )

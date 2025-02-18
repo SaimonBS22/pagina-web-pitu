@@ -1,5 +1,6 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useState, useEffect } from "react";
+import ScrollReveal from "../scrollReveal/scrollReveal.jsx";
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -89,6 +90,9 @@ const Contacto = () => {
 
 
   return (
+    <>
+    <hr />
+    <ScrollReveal>
     <section className="seccion-contacto">
       <div className="div-contacto">
         <h2 className="h2-contacto">Estudio juridico Blaksley & Aznar</h2>
@@ -173,6 +177,8 @@ const Contacto = () => {
         </button>
       </form>
     </section>
+    </ScrollReveal>
+    </>
   );
 };
 

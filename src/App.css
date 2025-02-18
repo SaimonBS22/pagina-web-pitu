@@ -3,12 +3,6 @@
   padding: 0;
   font-family:"montserrat";
 }
-body{
-  height: 2000px;
-}
-li{
-  color: white;
-}
 
 @keyframes fadeIn{
   from{
@@ -226,7 +220,7 @@ li{
 .bi-whatsapp {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 50px;
   z-index: 999;
   font-size: 40px !important;
   color: green !important; 
@@ -243,11 +237,12 @@ li{
 .contenedor-sobre-nosotros{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 3%;
-  margin-left: 12%;
   gap: 20px;
-  animation: fadeIn 3s ease-in-out;
-  
+ 
+  margin-bottom: 0;
 }
 
 .div-sobre-nosotros{
@@ -257,61 +252,60 @@ li{
 }
 .p-sobre-nosotros{
   width: 450px;
+  color: white;
+  font-weight: 400;
 }
-.img-sobre-nosotros{
-  position: absolute;
-  z-index: 1;
-  top: 180px;
-  right:250px;
-  height: 300px;
-  width: 200px;
-  border-radius: 20px;
-  box-shadow: 5px 5px 15px black;
+.h2-sobre-nosotros{
+  color: white;
 }
-.img-sobre-nosotros1{
-  position: absolute;
-  z-index: 2;
-  right: 375px;
-  top: 300px;
-  height: 250px;
-  width: 200px;
-  border-radius: 20px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-}
-
 .contenedor1-sobre-nosotros{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 25%;
-  margin-right: 20%;
+  align-items: center;
+  margin-top:3% ;
   gap: 20px;
+  
 }
 .div1-sobre-nosotros{
   display: flex;
-  flex-direction: row-reverse;
 }
 .h2-sobre-nosotros1{
-  margin-right: 240px;
-  align-self: flex-end;
+  color: white;
 }
-.img-sobre-nosotros2{
-  position: absolute;
-  left: 150px;
-  top: 825px;
-  z-index: 3;
-  height: 275px;
-  width: 200px;
-  border-radius: 20px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+.contenedor2-sobre-nosotros{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10%;
+  gap: 120px;
 }
-.img-sobre-nosotros3{
-  position: absolute;
-  top: 700px;
-  left: 300px;
-  z-index: 2;
-  height: 275px;
-  width: 200px;
-  border-radius: 20px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+
+.div-foto-trabajador{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.ul-foto-trabajador{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+  margin-top: 5%;
+}
+.img-sobre-nosotros-trabajador{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  height: 250px;
+  width: 175px;
+}
+b{
+  font-weight: bolder;
+}
+.contenedor-supremo-sobreN{
+  background-image:url('/imagenes/fondo-pantalla1.jpeg');
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
 }

@@ -26,9 +26,9 @@ li{
 .video-inicio {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* O 'cover' según el efecto que quieras */
+  object-fit: cover;
   position: absolute;
-  transition: opacity 1s ease-in-out; /* Transición suave */
+  transition: opacity 1s ease-in-out; 
 }
 
 .visible{
@@ -127,9 +127,10 @@ li{
 }
 .h3-menu-hamburguesa{
   align-self: first baseline;
-  text-decoration: underline;
+  border-bottom: 1px solid white;
   color: white;
   animation: fadeIn 3s ease-in-out;
+  padding-bottom: 5px;
 }
 
 
@@ -312,6 +313,18 @@ b{
   height: 900px;
 }
 
+/* ---------------ESTILOS DAÑOS Y PERJUICIOS--------------- */
+.contenedor-daños{
+  height: 600px;
+}
+.img-daños{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+
 
 
 /* --------------ESTILOS FOOTER----------- */
@@ -323,25 +336,27 @@ b{
   height: 300px;
 }
 
+
 .div-footer{
   display: flex;
   flex-direction: column;
-  gap: 20px;
   justify-content: center;
   align-items: center;
 }
 .img-footer{
   width: 200px;
   height: 100px;
+  margin-bottom: 10px;
 }
 .div-icons{
   display: flex;
-  gap: 15px;
+  margin-left: 50px;
 }
 .bi-instagram{
   color: white;
   font-size: 20px;
   cursor: pointer;
+  margin-right: 15px;
 }
 .bi-instagram:hover{
 color: #E4405F;
@@ -350,6 +365,7 @@ color: #E4405F;
   color: white;
   font-size: 20px;
   cursor: pointer;
+  margin-right: 15px;
 }
 .bi-facebook:hover{
   color: #1877F2;
@@ -358,6 +374,7 @@ color: #E4405F;
   color: white;
   font-size: 20px;
   cursor: pointer;
+  margin-right: 15px;
 }
 .bi-linkedin:hover{
   color: #0077B5 ;
@@ -368,13 +385,15 @@ color: #E4405F;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 30px;
 }
-.h3-footer{
+.h1-footer{
   color: white;
+  margin-bottom: 10px;
 }
 .p-footer{
   color: white;
+  margin-bottom: 10px;
 }
 .div-footer-contacto{
   display: flex;
@@ -397,15 +416,16 @@ color: #E4405F;
   background-color: white;
   color: black;
 }
-.div-footer3{
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-  gap: 20px;
-}
 .div-footer-contacto .bi-geo-alt-fill{
   color: white;
   font-size: 20px;
+}
+.div-footer3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .hr-footer{
@@ -413,6 +433,7 @@ color: #E4405F;
   color: white;
   border: 1px solid white;
   width: 90%;
+  margin-left: 60px;
 }
 .div-hr-footer{
   display: flex;

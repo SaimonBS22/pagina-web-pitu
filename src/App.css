@@ -316,35 +316,117 @@ b{
 
 /* --------------ESTILOS FOOTER----------- */
 
+.contenedor-footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 300px;
+}
+
 .div-footer{
   display: flex;
   flex-direction: column;
-  height: 300px;
-  background-color: black;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .img-footer{
   width: 200px;
   height: 100px;
-  margin-top: 50px;
-  margin-left: 100px;
 }
-.div-footer-icons{
+.div-icons{
   display: flex;
-  flex-direction: row;
-  margin-left: 150px;
   gap: 15px;
 }
-.div-footer-icons i{
+.bi-instagram{
   color: white;
   font-size: 20px;
+  cursor: pointer;
 }
 .bi-instagram:hover{
-  color:#E4405F;
+color: #E4405F;
+}
+.bi-facebook{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }
 .bi-facebook:hover{
   color: #1877F2;
 }
+.bi-linkedin{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
 .bi-linkedin:hover{
-  color: #0A66C2;
+  color: #0077B5 ;
+}
 
+.div-footer2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.h3-footer{
+  color: white;
+}
+.p-footer{
+  color: white;
+}
+.div-footer-contacto{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.bi-person-rolodex{
+  color: white;
+  font-size: 30px;
+}
+.boton-footer{
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton-footer:hover{
+  background-color: white;
+  color: black;
+}
+.div-footer3{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  gap: 20px;
+}
+.div-footer-contacto .bi-geo-alt-fill{
+  color: white;
+  font-size: 20px;
+}
+
+.hr-footer{
+  position: absolute;
+  color: white;
+  border: 1px solid white;
+  width: 90%;
+}
+.div-hr-footer{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  height: 80px;
+  justify-content: center;
+  padding-top: 5%;
+  gap: 5px;
+}
+.p-footer-hr{
+  color: white;
+}
+.bi-c-circle{
+  color: white;
+  font-size: 10px;
 }

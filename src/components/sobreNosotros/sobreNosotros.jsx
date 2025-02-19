@@ -1,5 +1,4 @@
 import ScrollReveal from "../scrollReveal/scrollReveal.jsx"
-import Contacto from "../contacto/contacto.jsx"
 
 
 

@@ -6,7 +6,7 @@ const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
 
     return(
         <>
-        <section>
+        <section onMouseEnter={hideMenu} onMouseLeave={showMenu}>
             <nav className="nav-bar"> 
                 <div className="nav-bar-logo">
                     <img src="/imagenes/logo2.png" alt="Logo" className="img-logo" />

@@ -9,7 +9,7 @@ const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
         <section>
             <nav className="nav-bar"> 
                 <div className="nav-bar-logo">
-                    <img src="/imagenes/logo2.png" alt="Logo" className="img-logo" />
+                    <img src={`${process.env.PUBLIC_URL}/imagenes/logo2.png`} alt="Logo" className="img-logo" />
                 </div>
 
                 <div className="nav-bar-link" onMouseEnter={showMenu}>

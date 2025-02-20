@@ -1,9 +1,9 @@
 {
   "name": "pagina-web-pitu",
+  "homepage": "https://SaimonBS22.github.io/pagina-web-pitu/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://saimonbs22.github.io/pagina-web-pitu",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,6 +17,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "framer-motion": "^12.4.3",
+    "gh-pages": "^6.3.0",
     "kleur": "^4.1.5",
     "mongoose": "^8.10.0",
     "react": "^19.0.0",

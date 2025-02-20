@@ -8,7 +8,7 @@ const Footer = ()=>{
             
             <div className="div-footer">
             <ScrollReveal>
-                <img src="/imagenes/logo-editado.png" className="img-footer" />
+                <img src='/pagina-web-pitu/imagenes/logo-editado.png' className="img-footer" />
                 <div className="div-icons">
                 <i class="bi bi-instagram"></i>
                 <i class="bi bi-facebook"></i>

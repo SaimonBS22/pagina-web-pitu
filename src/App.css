@@ -97,8 +97,10 @@ li{
   justify-content: center;
   z-index: 99999;
   background-color: black;
-  padding: 50px;
   top: 141px;
+  right: 0px;
+  left: 0;
+  padding: 50px;
   width: 100%;
 }
 .div-link-menu-hamburguesa{

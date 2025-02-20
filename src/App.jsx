@@ -28,13 +28,13 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter >
       <NavBar  isMenuVisible={isMenuVisible}
         showMenu={showMenu}
         hideMenu={hideMenu}/>
   
       <Routes>
-        <Route path='/inicio' element={<Inicio/>}></Route>
+        <Route path='/' element={<Inicio/>}></Route>
         <Route path="/sobreNosotros" element={<SobreNosotros/>}></Route>
         <Route path='/areasDePractica' element={<AreasDePractica/>}></Route>
         <Route path='/dañosPerjuicios' element={<DañosYPerjuicios/>}></Route>

@@ -6,25 +6,26 @@ const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
 
     return(
         <>
-        <section onMouseEnter={hideMenu} onMouseLeave={showMenu}>
+        <section>
             <nav className="nav-bar"> 
                 <div className="nav-bar-logo">
                     <img src="/imagenes/logo2.png" alt="Logo" className="img-logo" />
                 </div>
 
-                <div className="nav-bar-link">
-                    <Link to="/inicio" className="link"  onMouseEnter={hideMenu}>Inicio</Link>
+                <div className="nav-bar-link" onMouseEnter={showMenu}>
+                    <Link to="/" className="link"  onMouseEnter={hideMenu}>Inicio</Link>
                     <Link to="/sobreNosotros" className="link" onMouseEnter={hideMenu} >Sobre Nosotros</Link>
                     <Link to="/areasDePractica" className="link" onMouseEnter={showMenu}>Areas de Practica</Link>
                     <Link to="/dañosPerjuicios" className="link" onMouseEnter={hideMenu} >Daños y Perjuicios</Link>
                     <Link to="/contacto" className="link" onMouseEnter={hideMenu} >Contacto</Link> 
                 </div>
             </nav>
-
-            <div className="menu-hamburguesa-container">
-            {isMenuVisible && (
-                <>
+            </section>
+            <div className="menu-hamburguesa-container" >
+            {isMenuVisible&& (
+                <div  >
                 <motion.div
+                onMouseEnter={showMenu}
                     className="menu-hamburguesa"
                     initial={{ height: 0, opacity: 0 }}
                     animate={isMenuVisible ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
@@ -71,12 +72,11 @@ const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
                    </div>
                     
                 </motion.div>
-                </>
+                </div>
                 )}
         </div>
 
-    
-    </section>
+
     </>
     )
 }

@@ -15,7 +15,7 @@ const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
                 <div className="nav-bar-link" onMouseEnter={showMenu}>
                     <Link to="/" className="link"  onMouseEnter={hideMenu}>Inicio</Link>
                     <Link to="/sobreNosotros" className="link" onMouseEnter={hideMenu} >Sobre Nosotros</Link>
-                    <Link to="/pagina-web-pitu/areasDePractica" className="link" onMouseEnter={showMenu}>Areas de Practica</Link>
+                    <Link to="/areasDePractica" className="link" onMouseEnter={showMenu}>Areas de Practica</Link>
                     <Link to="/dañosPerjuicios" className="link" onMouseEnter={hideMenu} >Daños y Perjuicios</Link>
                     <Link to="/contacto" className="link" onMouseEnter={hideMenu} >Contacto</Link> 
                 </div>

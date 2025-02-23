@@ -5,7 +5,7 @@ import ScrollReveal from "../scrollReveal/scrollReveal.jsx"
 const SobreNosotros = () => {
     return(
         <section className="contenedor-supremo-sobreN">
-            <hr />
+           
             <ScrollReveal>
             <div className="contenedor-sobre-nosotros">
                 <h2 className="h2-sobre-nosotros">¿Quienes somos?</h2>

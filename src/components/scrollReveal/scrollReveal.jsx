@@ -31,6 +31,7 @@ const ScrollReveal = ({ children }) => {
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0)' : 'translateY(50px)',
         transition: 'opacity 2s ease, transform 2s ease',
+        position:'relative'
       }}
     >
       {children}

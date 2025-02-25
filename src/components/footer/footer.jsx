@@ -46,7 +46,7 @@ const Footer = ()=>{
                     <hr className="hr-footer"/>
                     <div className="div-hr-footer">
                         
-                        <i class="bi bi-c-circle"></i> <p className="p-footer-hr">Blaksley & Aznar | Todos los derechos reservados</p>
+                         <p className="p-footer-hr">©  Blaksley & Aznar | Todos los derechos reservados</p>
                     </div>
                 </ScrollReveal>
         </>

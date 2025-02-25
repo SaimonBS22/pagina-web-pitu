@@ -23,6 +23,18 @@ li{
 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------- ESTILOS INICIO ----------------------- */
 .video-container {
   position: relative;
@@ -54,6 +66,25 @@ li{
   z-index: 999;
   color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------ ESTILOS NAV BAR------------------- */
@@ -125,6 +156,27 @@ li{
   animation: fadeIn 3s ease-in-out;
   padding-bottom: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -211,6 +263,16 @@ li{
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* ---------------ICONO WHATSAPP----------- */
 
 .bi-whatsapp {
@@ -228,7 +290,30 @@ li{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------ESTILOS SOBRE NOSOTROS-------------- */
+.contenedor-supremo-sobreN{
+}
 .contenedor-sobre-nosotros{
   display: flex;
   flex-direction: column;
@@ -251,6 +336,7 @@ li{
   font-weight: 400;
 }
 .h2-sobre-nosotros{
+  margin-top: 50px;
   color: white;
 }
 .contenedor1-sobre-nosotros{
@@ -306,6 +392,30 @@ b{
   height: 900px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------ESTILOS DAÑOS Y PERJUICIOS--------------- */
 .contenedor-daños{
   height: 600px;
@@ -316,6 +426,7 @@ b{
   object-fit: cover;
   position: absolute;
   z-index: 1;
+  opacity: 10 black;
 }
 .div-daños3{
   display: flex;
@@ -405,6 +516,24 @@ b{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----------------ESTILOS AREA DE PRACTICAS------------------- */
 
 .div-areas-practicas{
@@ -445,11 +574,127 @@ b{
 }
 .p-areas-practicas{
   font-size: medium;
+  opacity: 0;
 }
 .p-areas-practicas1{
   font-size: medium;
   width: 350px;
 }
+.bi-arrow-down-circle{
+  cursor: pointer;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 125px;
+  font-size: 30px;
+  font-weight: bolder;
+  width: 20px;
+  border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------ESPECIALIZACIONES AREAS DE PRACTICA-------------------------------- */
+.contenedor-derecho-civil{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 5%;
+  
+}
+.div-derecho-civil{
+  display: flex;
+  flex-direction: column;
+  gap:120px;
+}
+.img-derecho-civil{
+  height: 550px;
+  width: 500px;
+  border-radius: 20px;
+}
+.h1-derecho-civil{
+  margin-top: 20px;
+  width: 400px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.p-derecho-civil{
+  font-size: large;
+  line-height: 2;
+}
+.contenedor-real-estate{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 5%;
+}
+.div-real-estate{
+  display: flex;
+  flex-direction: column;
+  gap:80px;
+}
+.img-real-estate{
+  height: 550px;
+  width: 500px;
+  border-radius: 20px;
+}
+.h1-real-estate{
+  margin-top: 20px;
+  width: 400px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.p-real-estate{
+  line-height: 2;
+}
+
+.contenedor-regularizacion-propiedades{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 5%;
+}
+.div-regularizacion-propiedades{
+  display: flex;
+  flex-direction: column;
+  gap:80px;
+}
+.img-regularizacion-propiedades{
+  height: 550px;
+  width: 500px;
+  border-radius: 20px;
+}
+.h1-regularizacion-propiedades{
+  margin-top: 20px;
+  width: 400px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.p-regularizacion-propiedades{
+  line-height: 2;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -572,8 +817,4 @@ color: #E4405F;
 }
 .p-footer-hr{
   color: white;
-}
-.bi-c-circle{
-  color: white;
-  font-size: 10px;
 }

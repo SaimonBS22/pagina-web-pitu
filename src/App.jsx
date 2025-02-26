@@ -48,11 +48,11 @@ function App() {
         hideMenu={hideMenu}/>
   
       <Routes>
-        <Route path='/' element={<Inicio/>}></Route>
-        <Route path="/sobreNosotros" element={<SobreNosotros/>}></Route>
-        <Route path='/areasDePractica' element={<AreasDePractica/>}></Route>
-        <Route path='/dañosPerjuicios' element={<DañosYPerjuicios/>}></Route>
-        <Route path='/contacto' element={<Contacto/>}></Route>
+        <Route path='/pagina-web-pitu/' element={<Inicio/>}></Route>
+        <Route path="/pagina-web-pitu/sobreNosotros" element={<SobreNosotros/>}></Route>
+        <Route path='/pagina-web-pitu/areasDePractica' element={<AreasDePractica/>}></Route>
+        <Route path='/pagina-web-pitu/dañosPerjuicios' element={<DañosYPerjuicios/>}></Route>
+        <Route path='/pagina-web-pitu/contacto' element={<Contacto/>}></Route>
 
         <Route path='/pagina-web-pitu/sucesiones' element={<Sucesiones/>}></Route>
         <Route path='/pagina-web-pitu/derecho-civil' element={<DerechoCivil/>}></Route>

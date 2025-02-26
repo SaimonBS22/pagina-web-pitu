@@ -10,7 +10,7 @@ const Footer = ()=>{
             <ScrollReveal>
                 <img src='/pagina-web-pitu/imagenes/logo-editado.png' className="img-footer" />
                 <div className="div-icons">
-                <i class="bi bi-instagram"></i>
+                <a href="https://www.instagram.com/blaksleyaznar/"><i class="bi bi-instagram"></i></a>
                 <i class="bi bi-facebook"></i>
                 <i class="bi bi-linkedin"></i>
                 </div>

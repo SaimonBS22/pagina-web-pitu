@@ -15,13 +15,13 @@ const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
                 <div className="nav-bar-link" onMouseEnter={showMenu}>
                     <Link to="/pagina-web-pitu/" className="link"  onMouseEnter={hideMenu}>Inicio</Link>
                     <Link to="/pagina-web-pitu/sobreNosotros" className="link" onMouseEnter={hideMenu} >Sobre Nosotros</Link>
-                    <Link to="/pagina-web-pitu/areasDePractica" className="link" onMouseEnter={showMenu}>Areas de Practica</Link>
+                    <Link to="/pagina-web-pitu/areasDePractica" className="link" onMouseEnter={showMenu}>Derecho Inmobiliario</Link>
                     <Link to="/pagina-web-pitu/dañosPerjuicios" className="link" onMouseEnter={hideMenu} >Daños y Perjuicios</Link>
                     <Link to="/pagina-web-pitu/contacto" className="link" onMouseEnter={hideMenu} >Contacto</Link> 
                 </div>
             </nav>
 
-            <div className="menu-hamburguesa-container" >
+            {/* <div className="menu-hamburguesa-container" >
             {isMenuVisible&& (
                 <div  >
                 <motion.div
@@ -74,7 +74,7 @@ const NavBar = ({ isMenuVisible, showMenu, hideMenu })=>{
                 </motion.div>
                 </div>
                 )}
-        </div>
+        </div> */}
 
 
             </section>

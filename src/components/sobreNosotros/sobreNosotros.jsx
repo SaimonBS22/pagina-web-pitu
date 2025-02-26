@@ -9,23 +9,20 @@ const SobreNosotros = () => {
             <ScrollReveal>
             <div className="contenedor-sobre-nosotros">
                 <h2 className="h2-sobre-nosotros">¿Quienes somos?</h2>
-                    <p className="p-sobre-nosotros"><b>Blaksley & Aznar</b> es un estudio jurídico de prestigio que se especializa en brindar asesoramiento
-                        legal integral a empresas y particulares. Con una trayectoria consolidada y un equipo de abogados
-                        altamente capacitados, ofrecemos soluciones estratégicas para enfrentar los desafíos legales de
-                        un mundo en constante cambio.</p>
+                    <p className="p-sobre-nosotros">En <b>Blaksley & Aznar</b>, contamos con una sólida trayectoria en el ámbito del derecho inmobiliario, patrimonial y de daños. Durante años, nos hemos dedicado a la resolución de casos relacionados con propiedades, consolidándonos como un referente en la provincia de Buenos Aires. Además, somos especialistas en la defensa de los derechos de quienes han sufrido perjuicios, brindando soluciones efectivas en materia de responsabilidad civil y daños.</p>
             </div>
             </ScrollReveal>
 
             <ScrollReveal>
             <div className="contenedor1-sobre-nosotros">
                 <h2 className="h2-sobre-nosotros1">Nuestra Filosofia</h2>
-                    <p className="p-sobre-nosotros">En <b>Blaksley & Aznar</b> creemos en la excelencia, la ética y la innovación como pilares fundamentales de nuestro ejercicio profesional.
-                     Nos enfocamos en comprender a fondo las necesidades de nuestros clientes para ofrecer respuestas eficientes y personalizadas. Nuestro objetivo es
-                      proporcionar seguridad jurídica y garantizar el mejor resultado en cada caso.</p>
+                    <p className="p-sobre-nosotros1">En <b>Blaksley & Aznar</b> creemos en la excelencia, la ética y la innovación como pilares fundamentales de nuestro ejercicio profesional.
+                     Nos enfocamos en proteger y regularizar los derechos de nuestros clientes, garantizando la seguridad jurídica de sus bienes y el resarcimiento justo en caso de daños.
+                     Creemos en la importancia de la seguridad jurídica como pilar fundamental del bienestar personal y patrimonial. Por ello, nos dedicamos con profesionalismo y compromiso a ofrecer asesoramiento integral, convirtiéndonos en tu mejor aliado en la gestión de bienes, propiedades y reclamos por daños.</p>
             </div>
             </ScrollReveal>
 
-            <ScrollReveal>
+            {/* <ScrollReveal>
             <div className="contenedor2-sobre-nosotros"> 
                 <div className="div-foto-trabajador">
                     <img src="" alt="Foto de trabajador" className="img-sobre-nosotros-trabajador"/>
@@ -44,7 +41,7 @@ const SobreNosotros = () => {
                     </ul>
                 </div>
             </div>
-            </ScrollReveal> 
+            </ScrollReveal>  */}
         </section>
     )
 }

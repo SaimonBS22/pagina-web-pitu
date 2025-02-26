@@ -13,6 +13,18 @@ import Whatsapp from './components/whatsapp/whatsapp.jsx'
 import RealEstate from './components/areasPracticas/especializaciones/realEstate.jsx'
 import RegularizacionDePropiedades from './components/areasPracticas/especializaciones/regularizacionProp.jsx'
 import Footer from './components/footer/footer.jsx'
+import DivisionesDeCondominio from './components/areasPracticas/especializaciones/divisionCondominio.jsx'
+import Subdivisiones from './components/areasPracticas/especializaciones/subdivisiones.jsx'
+import AccionesReivindicatorias from './components/areasPracticas/especializaciones/AccionesReivindicatorias.jsx'
+import DesalojosCiviles from './components/areasPracticas/especializaciones/DesalojosCiviles.jsx'
+import AccionesPosesoriasInterdictos from './components/areasPracticas/especializaciones/AccionesPosesoriasInterdictos.jsx'
+import RegularizacionDominio from './components/areasPracticas/especializaciones/RegularizacionDominioTitulosPropiedad.jsx'
+
+
+
+
+
+
 
 function App() {
 
@@ -46,12 +58,12 @@ function App() {
         <Route path='/pagina-web-pitu/derecho-civil' element={<DerechoCivil/>}></Route>
         <Route path='/pagina-web-pitu/real-estate' element={<RealEstate/>}></Route>
         <Route path='/pagina-web-pitu/regularizacion-de-propiedades' element={<RegularizacionDePropiedades/>}></Route>
-        {/* <Route path='/pagina-web-pitu/divisiones-de-condominio' element={<DivisionesDeCondominio/>}></Route>
-        <Route path='/pagina-web-pitu/subdivisiones-lotes-y-mensuras' element={<SubdivisionesLotesMensuras/>}></Route>
+        <Route path='/pagina-web-pitu/divisiones-de-condominio' element={<DivisionesDeCondominio/>}></Route>
+        <Route path='/pagina-web-pitu/subdivisiones-lotes-y-mensuras' element={<Subdivisiones/>}></Route>
         <Route path='/pagina-web-pitu/acciones-reivindicatorias' element={<AccionesReivindicatorias/>}></Route>
         <Route path='/pagina-web-pitu/desalojos-civiles' element={<DesalojosCiviles/>}></Route>
         <Route path='/pagina-web-pitu/acciones-posesorias-e-interdictos' element={<AccionesPosesoriasInterdictos/>}></Route>
-        <Route path='/pagina-web-pitu/regularizacion-de-dominio-y-titulos-de-propiedad' element={<RegularizacionDominioTitulosPropiedad/>}></Route> */}
+        <Route path='/pagina-web-pitu/regularizacion-de-dominio-y-titulos-de-propiedad' element={<RegularizacionDominio/>}></Route>
 
       </Routes>
       <Whatsapp/>

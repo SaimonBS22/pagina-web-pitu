@@ -96,6 +96,7 @@ const Contacto = () => {
     <section className="seccion-contacto">
       <div className="div-contacto">
         <h2 className="h2-contacto">Estudio juridico Blaksley & Aznar</h2>
+        <br />
 
         <div className="div-info-contactoSup">
           <div className="div-info-contacto">

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const DañosYPerjuicios = () => {
   const [index, setIndex] = useState(0);
-  const [paused, setPaused] = useState(false); // Estado para controlar pausa
+  const [paused, setPaused] = useState(false);
 
   const datos = [
     { src: "/pagina-web-pitu/imagenes/daños-contractuales.jpg", titulo: "Daños Contractuales", clase: "estilo-contractuales", parrafo: "-Incumplimientos", parrafo1: "-Perjuicios económicos" },

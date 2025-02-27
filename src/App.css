@@ -337,8 +337,6 @@ li{
   margin-top: 3%;
   gap: 20px;
   margin-right: 400px;
- 
-  margin-bottom: 0;
 }
 
 .div-sobre-nosotros{
@@ -347,13 +345,13 @@ li{
 
 }
 .p-sobre-nosotros{
- 
   width: 450px;
   color: white;
   font-weight: 400;
+  text-align:center;
 }
 .p-sobre-nosotros1{
-  
+  text-align:center;
   width: 450px;
   color: white;
   font-weight: 400;
@@ -418,7 +416,7 @@ b{
   background-position: center; 
   background-attachment: fixed;
   width: 100%;
-  height: 900px;
+  height: 750px;
 }
 
 .contenedor-supremo-sobreN::before {
@@ -534,23 +532,13 @@ b{
   font-weight: 700;
 }
 
-.bi-arrow-right{
-  position: absolute !important;
-  z-index: 99 !important;
-  color: white !important;
-  font-size: xx-large;
-  top: 450px;
-  right: 50px;
-  cursor: pointer;
-}
-.bi-arrow-left{
-  position: absolute !important;
-  z-index: 99 !important;
-  color: white !important;
-  font-size: xx-large;
-  top: 450px;
-  left: 50px;
-  cursor: pointer;
+.boton-pausa{
+  position: absolute;
+  top: 115px;
+  right: 0;
+  z-index: 99;
+  font-size: 100px;
+  color: white;
 }
 
 

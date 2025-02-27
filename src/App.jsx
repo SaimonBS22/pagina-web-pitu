@@ -26,6 +26,9 @@ import RegularizacionDominio from './components/areasPracticas/especializaciones
 
 
 
+
+
+
 function App() {
 
   const [isMenuVisible, setIsMenuVisible] = useState(true);

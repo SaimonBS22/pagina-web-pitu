@@ -1,17 +1,16 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useState, useEffect } from "react";
 import ScrollReveal from "../scrollReveal/scrollReveal.jsx";
+import emailjs from '@emailjs/browser'
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
     nombre: "",
     apellido: "",
-    empresa: "",
+    telefono: "",
     email: "",
     mensaje: "",
   });
-
-  const [serverStatus, setServerStatus] = useState(null);  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,72 +20,39 @@ const Contacto = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serverOnline = await checkServerStatus();
+    console.log("Enviando:", formData);
 
-    if (serverOnline) {
-      sendDataToServer(formData);
-    } else {
-      localStorage.setItem("formData", JSON.stringify(formData));
-      alert("Formulario enviado con éxito");
-    }
-  };
-
-  const checkServerStatus = async () => {
-    try {
-      const response = await fetch("http://localhost:8080/usuarios", {
-        method: "GET",
-      });
-
-      if (response.ok) {
-        setServerStatus(true);
-        return true;
-      } else {
-        setServerStatus(false);
-        return false;
-      }
-    } catch (error) {
-      setServerStatus(false);
-      return false;
-    }
-  };
-
-  const sendDataToServer = async (data) => {
-    try {
-      const response = await fetch("http://localhost:8080/usuarios", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    emailjs
+      .send(
+        "service_fwl1ys1",  // ID del servicio
+        "template_wzxm8sp", // ID de la plantilla
+        {
+          nombre: formData.nombre,
+          apellido: formData.apellido,
+          telefono: formData.telefono,
+          email: formData.email,
+          mensaje: formData.mensaje,
         },
-        body: JSON.stringify(data),
+        "NNZKjmaEe1KbUOOQh" // Clave pública de EmailJS
+      )
+      .then(() => {
+        alert("Correo enviado con éxito");
+        setFormData({ nombre: "", apellido: "", telefono: "", email: "", mensaje: "" }); // Limpiar formulario
+      })
+      .catch((error) => {
+        console.error("Error al enviar correo:", error);
       });
-
-      if (response.ok) {
-        localStorage.removeItem("formData");  
-      } else {
-        alert("Hubo un error al enviar el formulario.");
-      }
-    } catch (error) {
-      console.error("Error al enviar los datos:", error);
-    }
   };
 
-  
-  useEffect(() => {
-    const enviarDatosGuardados = async () => {
-      const storedData = JSON.parse(localStorage.getItem("formData"));
-      if (storedData) {
-        const serverOnline = await checkServerStatus();
-        if (serverOnline) {
-          sendDataToServer(storedData);   
-        }
-      }
-    };
 
-    enviarDatosGuardados();
-  }, []);  
+
+
+
+
+
 
 
   return (
@@ -128,6 +94,7 @@ const Contacto = () => {
               required
               className="input-contacto"
               name="nombre"
+              value={formData.nombre}
               onChange={handleChange}
             />
           </div>
@@ -139,18 +106,20 @@ const Contacto = () => {
               required
               className="input-contacto"
               name="apellido"
+              value={formData.apellido}
               onChange={handleChange}
             />
           </div>
         </div>
 
-        <label htmlFor="">Empresa *</label>
+        <label htmlFor="">Telefono *</label>
         <input
-          placeholder="Empresa"
+          placeholder="Telefono"
           type="text"
           required
           className="input-contacto"
-          name="empresa"
+          name="telefono"
+          value={formData.telefono}
           onChange={handleChange}
         />
 
@@ -161,6 +130,7 @@ const Contacto = () => {
           required
           className="input-contacto"
           name="email"
+          value={formData.email}
           onChange={handleChange}
         />
 
@@ -170,6 +140,7 @@ const Contacto = () => {
           placeholder="Escriba aqui..."
           name="mensaje"
           required
+          value={formData.mensaje}
           onChange={handleChange}
         ></textarea>
 

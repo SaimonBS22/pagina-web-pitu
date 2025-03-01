@@ -21,27 +21,6 @@ const SobreNosotros = () => {
                      Creemos en la importancia de la seguridad jurídica como pilar fundamental del bienestar personal y patrimonial. Por ello, nos dedicamos con profesionalismo y compromiso a ofrecer asesoramiento integral, convirtiéndonos en tu mejor aliado en la gestión de bienes, propiedades y reclamos por daños.</p>
             </div>
             </ScrollReveal>
-
-            {/* <ScrollReveal>
-            <div className="contenedor2-sobre-nosotros"> 
-                <div className="div-foto-trabajador">
-                    <img src="" alt="Foto de trabajador" className="img-sobre-nosotros-trabajador"/>
-                    <ul className="ul-foto-trabajador">
-                        <li>Fransisco Blaksley</li>
-                        <li>Abogado</li>
-                        <li>Datos</li>
-                    </ul>
-                </div>
-                <div className="div-foto-trabajador">
-                    <img src="" alt="Foto de trabajador" className="img-sobre-nosotros-trabajador"/>
-                    <ul className="ul-foto-trabajador"> 
-                        <li>Milagros Aznar</li>
-                        <li>Abogado</li>
-                        <li>Datos</li>
-                    </ul>
-                </div>
-            </div>
-            </ScrollReveal>  */}
         </section>
     )
 }

@@ -1919,6 +1919,7 @@ color: #E4405F;
     justify-content: space-around;
     background-color: black;
     height: 300px;
+    flex-direction: column;
   }
   
   
@@ -1973,7 +1974,7 @@ color: #E4405F;
     gap: 30px;
   }
   .h1-footer{
-    color: red;
+    color: blue;
     margin-bottom: 10px;
     font-size: medium;
   }

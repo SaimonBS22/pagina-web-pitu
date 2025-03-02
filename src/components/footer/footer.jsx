@@ -26,7 +26,7 @@ const Footer = ()=>{
                 </div>
                 <p className="p-footer"><b>Email:</b> blaksleyaznar@gmail.com</p>
                 <p className="p-footer"><b>Telefono:</b> +54 9 11 3215-8091</p>
-                <Link to='/contacto'><button className="boton-footer">CONTACTANOS</button></Link>
+                <Link to='/pagina-web-pitu/contacto'><button className="boton-footer">CONTACTANOS</button></Link>
             </ScrollReveal>
             </div>
             

@@ -1287,7 +1287,7 @@ color: #E4405F;
   .bi-whatsapp {
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 10px;
     z-index: 999;
     font-size: 40px !important;
     color: white !important; 
@@ -1973,7 +1973,7 @@ color: #E4405F;
     gap: 30px;
   }
   .h1-footer{
-    color: white;
+    color: red;
     margin-bottom: 10px;
     font-size: medium;
   }

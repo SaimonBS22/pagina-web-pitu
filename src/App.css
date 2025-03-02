@@ -1101,7 +1101,7 @@ color: #E4405F;
   }
   .p-inicio{
     position: absolute;
-    top: 275px;
+    top: 270px;
     left: 20px;
     z-index: 999;
     color: white;
@@ -1287,7 +1287,7 @@ color: #E4405F;
   .bi-whatsapp {
     position: fixed;
     bottom: 20px;
-    right: 50px;
+    right: 30px;
     z-index: 999;
     font-size: 40px !important;
     color: white !important; 
@@ -1929,17 +1929,17 @@ color: #E4405F;
     align-items: center;
   }
   .img-footer{
-    width: 200px;
-    height: 100px;
+    width: 100px;
+    height: 75px;
     margin-bottom: 10px;
   }
   .div-icons{
     display: flex;
-    margin-left: 50px;
+    margin-left: 15px;
   }
   .bi-instagram{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     margin-right: 15px;
   }
@@ -1948,7 +1948,7 @@ color: #E4405F;
   }
   .bi-facebook{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     margin-right: 15px;
   }
@@ -1957,7 +1957,7 @@ color: #E4405F;
   }
   .bi-linkedin{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     margin-right: 15px;
   }
@@ -1975,10 +1975,12 @@ color: #E4405F;
   .h1-footer{
     color: white;
     margin-bottom: 10px;
+    font-size: medium;
   }
   .p-footer{
     color: white;
     margin-bottom: 10px;
+    font-size: smaller;
   }
   .div-footer-contacto{
     display: flex;
@@ -1987,15 +1989,17 @@ color: #E4405F;
   }
   .bi-person-rolodex{
     color: white;
-    font-size: 30px;
+    font-size: 15px;
   }
   .boton-footer{
-    padding: 10px;
+    padding: 5px;
     background-color: black;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
+    height: 35px;
+    font-size: 10px;
   }
   .boton-footer:hover{
     background-color: white;
@@ -2003,7 +2007,7 @@ color: #E4405F;
   }
   .div-footer-contacto .bi-geo-alt-fill{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
   }
   .div-footer3{
     display: flex;
@@ -2031,16 +2035,8 @@ color: #E4405F;
   }
   .p-footer-hr{
     color: white;
+    font-size: smaller;
   }
-  
-
-
-
-
-  
-  
-  
-  
   }
 
 

@@ -1059,7 +1059,7 @@ color: #E4405F;
 
 @keyframes slideRight{
   0% {
-    right: 0;
+    right: -20px;
   }
   100% {
     right: 20px; 
@@ -1191,6 +1191,7 @@ color: #E4405F;
 .bi-x{
   color: white;
   font-size: 30px;
+  cursor: pointer;
 }
 
   

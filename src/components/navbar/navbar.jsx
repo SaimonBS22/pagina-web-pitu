@@ -5,6 +5,8 @@ const NavBar = ()=>{
 
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+  
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -50,10 +52,10 @@ const NavBar = ()=>{
               </div>
 
               {!menuOpen && (
-                <i class="bi bi-list" onClick={() => setMenuOpen(true)}></i>
+                <i className='bi bi-list' onClick={() => setMenuOpen(true)}></i>
                 )}
               {menuOpen && (
-                <div className="nav-bar-link">
+                <div className='nav-bar-link'>
                   <i class="bi bi-x" onClick={() => setMenuOpen(false)}></i>
                 <Link to="/pagina-web-pitu/" className="link" onClick={() => setMenuOpen(false)}>Inicio</Link>
                 <Link to="/pagina-web-pitu/sobreNosotros" className="link" onClick={() => setMenuOpen(false)}>Sobre Nosotros</Link>

@@ -1093,17 +1093,19 @@ color: #E4405F;
     position: absolute;
     z-index: 999;
     top: 200px;
-    left: 80px;
+    left: 20px;
     color: white;
     font-weight: bolder;
+    font-size: x-large;
   }
   .p-inicio{
     position: absolute;
     top: 250px;
-    left: 80px;
+    left: 20px;
     z-index: 999;
     color: white;
     font-weight: bolder;
+    font-size: large
   }
   
   
@@ -1141,7 +1143,7 @@ color: #E4405F;
     gap: 10px;
   }
   .img-logo{
-    width: 150px;
+    width: 100px;
     height: 75px;
     border-radius: 20px ;
     margin-top: 0;
@@ -1149,7 +1151,7 @@ color: #E4405F;
   .link{
     color: black;
     text-decoration: none;
-    font-size: xx-small;
+    font-size: 12px;
   
   }
   .link:hover{

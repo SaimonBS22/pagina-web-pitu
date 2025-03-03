@@ -32,7 +32,6 @@ const AreasDePractica = ()=>{
                     <i class="bi bi-arrow-down-circle" onClick={()=>toggleVisibility(item.id)} 
                     style={{display: visible === item.id ? 'none': 'inline-block'}}></i>
                     <p className="p-areas-practicas" style={{
-                        fontSize:'medium',
                         opacity: visible ===item.id ? 1 : 0,
                         transition:'opacity 0.7s ease-in-out'
                     }}>{item.text}</p>

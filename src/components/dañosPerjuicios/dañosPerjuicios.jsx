@@ -21,7 +21,7 @@ const DañosYPerjuicios = () => {
 
   useEffect(() => {
     if (!paused) { 
-      const interval = setInterval(siguiente, 8000);
+      const interval = setInterval(siguiente, 5000);
       return () => clearInterval(interval);
     }
   }, [index, paused]); 

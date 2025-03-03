@@ -37,18 +37,18 @@ const Footer = ()=>{
                         <h1 className="h1-footer">Oficina</h1> <i className="bi bi-geo-alt-fill"></i>
                     </div>
                         <p className="p-footer"><b>Direccion:</b> Rivadavia 195, <br /> San Isidro | Piso 5 | Depto B</p>
-                        <p>TExto para que </p>
-                        <p>quede bien</p>
+                        <p >TExto para que </p>
+                        <p  >quede bien</p>
                 </ScrollReveal>
             </div>
         </section>
-                <ScrollReveal>
+               
                     <hr className="hr-footer"/>
                     <div className="div-hr-footer">
                         
                          <p className="p-footer-hr">©  Blaksley & Aznar | Todos los derechos reservados</p>
                     </div>
-                </ScrollReveal>
+                
         </>
     )
 }

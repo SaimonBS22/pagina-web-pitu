@@ -1,0 +1,49 @@
+{
+  "hash": "a2613ec9",
+  "configHash": "215bab42",
+  "lockfileHash": "a3235407",
+  "browserHash": "83518d29",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "567805ce",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "88933c02",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "dc0e1bd8",
+      "needsInterop": false
+    },
+    "@emailjs/browser": {
+      "src": "../../node_modules/@emailjs/browser/es/index.js",
+      "file": "@emailjs_browser.js",
+      "fileHash": "8a0001b5",
+      "needsInterop": false
+    },
+    "framer-motion/client": {
+      "src": "../../node_modules/framer-motion/dist/es/client.mjs",
+      "file": "framer-motion_client.js",
+      "fileHash": "496f24cc",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-DBUGNT2R": {
+      "file": "chunk-DBUGNT2R.js"
+    },
+    "chunk-VUPZMC2T": {
+      "file": "chunk-VUPZMC2T.js"
+    },
+    "chunk-EQCVQC35": {
+      "file": "chunk-EQCVQC35.js"
+    }
+  }
+}

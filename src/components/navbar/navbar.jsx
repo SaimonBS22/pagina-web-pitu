@@ -54,6 +54,7 @@ const NavBar = ()=>{
                 )}
               {menuOpen && (
                 <div className="nav-bar-link">
+                  <i class='bi bi-x' onClick={() => setMenuOpen(false)}></i>
                 <Link to="/pagina-web-pitu/" className="link" onClick={() => setMenuOpen(false)}>Inicio</Link>
                 <Link to="/pagina-web-pitu/sobreNosotros" className="link" onClick={() => setMenuOpen(false)}>Sobre Nosotros</Link>
                 <Link to="/pagina-web-pitu/areasDePractica" className="link" onClick={() => setMenuOpen(false)}>Derecho Inmobiliario</Link>

@@ -9,7 +9,7 @@ const NavBar = ()=>{
     useEffect(() => {
         const handleResize = () => {
         const screenWidth = window.innerWidth;
-        setIsMobile(screenWidth >= 320 && screenWidth <= 576);
+        setIsMobile(screenWidth >= 300 && screenWidth <= 650);
         };
 
         handleResize(); 
@@ -17,6 +17,12 @@ const NavBar = ()=>{
 
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+
+    useEffect(() => {
+      if (!isMobile) {
+          setMenuOpen(false);
+      }
+  }, [isMobile]);
  
 
     return(

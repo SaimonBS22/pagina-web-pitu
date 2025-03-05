@@ -16,9 +16,8 @@ const SobreNosotros = () => {
             <ScrollReveal>
             <div className="contenedor1-sobre-nosotros">
                 <h2 className="h2-sobre-nosotros1">Nuestra Filosofia</h2>
-                    <p className="p-sobre-nosotros1">En <b>Blaksley & Aznar</b> creemos en la excelencia, la ética y la innovación como pilares fundamentales de nuestro ejercicio profesional.
-                     Nos enfocamos en proteger y regularizar los derechos de nuestros clientes, garantizando la seguridad jurídica de sus bienes y el resarcimiento justo en caso de daños.
-                     Creemos en la importancia de la seguridad jurídica como pilar fundamental del bienestar personal y patrimonial. Por ello, nos dedicamos con profesionalismo y compromiso a ofrecer asesoramiento integral, convirtiéndonos en tu mejor aliado en la gestión de bienes, propiedades y reclamos por daños.</p>
+                    <p className="p-sobre-nosotros1">Creemos en la excelencia, la ética y la innovación como pilares fundamentales de nuestro ejercicio profesional. Protegemos los derechos 
+                        de nuestros clientes, asegurando su seguridad jurídica y su crecimiento justo. Con compromiso y profesionalismo, ofrecemos acompañamiento integral para la gestión de bienes, propiedades y reclamos.</p>
             </div>
             </ScrollReveal>
         </section>

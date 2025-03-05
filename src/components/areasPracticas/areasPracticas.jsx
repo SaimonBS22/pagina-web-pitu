@@ -1,7 +1,25 @@
 import ScrollReveal from "../scrollReveal/scrollReveal.jsx";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const AreasDePractica = ()=>{
+
+    const [mobile, setMobile] = useState(false)
+
+
+    useEffect(()=>{
+        const handleResize = () => {
+            const screenWidth = window.innerWidth;
+            setMobile(screenWidth >= 1 && screenWidth <= 399);
+            };
+    
+            handleResize(); 
+            window.addEventListener("resize", handleResize); 
+    
+            return () => window.removeEventListener("resize", handleResize);
+    }
+    ,[])
+
+
 
     const items = [
         {id:4,title:'Juicio de Escrituracion', img:'/pagina-web-pitu/imagenes/regularizacion.webp', text:'La regularización de propiedades es el proceso para legalizar terrenos o inmuebles sin la documentación adecuada, asegurando que cumplan con normativas y permitiendo su venta, herencia o acceso a servicios.'},
@@ -25,10 +43,10 @@ const AreasDePractica = ()=>{
         <div className="div-areas-practicas">
             {items.map(item=>(
                 <ScrollReveal>
-                <div className="div-card-areas">
+                <div className={`div-card-areas ${mobile ? 'mobile-layout' : ''}`}>
                 <img src={item.img} className="img-areas-practicas" />
                 <div className="div-card-areas1">
-                    <h2 className="h2-areas-practicas" >{item.title}</h2>
+                <h2 className="h2-areas-practicas" >{item.title}</h2>
                     <i class="bi bi-arrow-down-circle" onClick={()=>toggleVisibility(item.id)} 
                     style={{display: visible === item.id ? 'none': 'inline-block'}}></i>
                     <p className="p-areas-practicas" style={{
@@ -40,6 +58,8 @@ const AreasDePractica = ()=>{
             </ScrollReveal>
             ))}
         </div>
+
+
         </>
     )
 }

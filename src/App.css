@@ -241,6 +241,7 @@ li{
         border: 1px solid black;
         border-radius: 3px;
         padding: 10px;
+        width: 120px;
       }
       
       
@@ -268,26 +269,26 @@ li{
       }
       
       .iframe{
-        height: 350px;
+        height: 250px;
         width: 100%;
         border-radius: 15px;
         border: none;
         margin-top: 5%;
       }
       .h2-contacto{
-        font-size: larger;
+        font-size: 17px;
         margin-left: 15px;
       }
       .bi-geo-alt-fill{
-        font-size: medium;
+        font-size: 12px;
         margin-left: 15px;
       }
       .bi-telephone{
-        font-size: medium;
+        font-size: 12px;
         margin-left: 15px;
       }
       .bi-envelope{
-        font-size: medium;
+        font-size: 12px;
         margin-left: 15px;
       }
       
@@ -446,16 +447,23 @@ li{
       
       
       /* ---------------ESTILOS DAÑOS Y PERJUICIOS--------------- */
-      .contenedor-daños{
-        height: 97vh;
-      }
-      .img-daños{
+      .contenedor-daños {
         width: 100%;
-        height: 97%;
-        object-fit: cover;
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      
+      .img-daños {
         position: absolute;
+        left: 0;
+        top: 125px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         z-index: 1;
-        opacity: 10 black;
       }
       .div-daños3{
         display: flex;
@@ -466,7 +474,7 @@ li{
         color: white;
         position: absolute;
         top: 320px;
-        left: 80px;
+        left: 30px;
         border-bottom: 1px solid white;
         padding-bottom: 5px;
         z-index: 99;
@@ -477,40 +485,40 @@ li{
         color: white;
         position: absolute;
         top: 320px;
-        left: 80px;
+        left: 30px;
         border-bottom: 1px solid white;
         padding-bottom: 5px;
         z-index: 99;
-        width: 300px;
+        width: 280px;
         font-size: large;
       }
       .estilo-transito{
         color: white;
         position: absolute;
         top: 320px;
-        left: 80px;
+        left: 30px;
         border-bottom: 1px solid white;
         padding-bottom: 5px;
         z-index: 99;
-        width: 300px;
+        width: 250px;
         font-size: large;
       }
       .estilo-contractuales{
         color: white;
         position: absolute;
         top: 320px;
-        left: 80px;
+        left: 30px;
         border-bottom: 1px solid white;
         padding-bottom: 5px;
         z-index: 99;
-        width: 300px;
+        width: 250px;
         font-size: large;
       }
       .p-daños{
         color: white;
         position: absolute;
         top: 355px;
-        left: 80px;
+        left: 30px;
         z-index: 99;
         font-size: small;
         font-weight: 700;
@@ -519,7 +527,7 @@ li{
         color: white;
         position: absolute;
         top: 380px;
-        left: 80px;
+        left: 30px;
         z-index: 99;
         font-size: small;
         font-weight: 700;
@@ -527,10 +535,10 @@ li{
       
       .boton-pausa{
         position: absolute;
-        top: 115px;
-        right: 0;
+        top: 135px;
+        right: 20px;
         z-index: 99;
-        font-size: 80px;
+        font-size: 50px;
         color: white;
       }
       
@@ -563,32 +571,32 @@ li{
         grid-auto-flow: row;
         justify-content:center ;
         align-items: center;
-        gap: 80px;
-      
+        gap: 150px;
       } 
       
       .div-card-areas {
         display: flex;
-        flex-direction: row;
-        height: 200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 390px;
         width: 200px;
-        gap: 30px;
+        gap: 10px;
         margin-top: 8vh;
+        margin-left: 75px;
       }
       .div-card-areas1{
         display:flex;
         flex-direction: column;
         gap: 5px;
-        
       }
       
       .img-areas-practicas{
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         border-radius: 50%;
         border: 1px solid black;
-        margin-bottom: 200px;
-        margin-left: 10px;
+        margin-bottom: 10px;
       }
       
       .h2-areas-practicas{
@@ -601,21 +609,33 @@ li{
         opacity: 0;
         font-size: small;
       }
-      .p-areas-practicas1{
-        font-size: small;
-        width: 350px;
-      }
       .bi-arrow-down-circle{
         cursor: pointer;
         align-items: center;
-        margin-top: 20px;
-        margin-left: 100px;
+        margin-left: 90px;
         font-size: 20px;
         font-weight: bolder;
         width: 20px;
         border-radius: 100%;
       }
       
+
+      .mobile-layout {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .mobile-layout h2 {
+          order: -1; 
+      }
+      
+      .mobile-layout img {
+          order: 0; 
+      }
+      
+      .mobile-layout .div-card-areas1 {
+          order: 1; 
+      }
       
       
       
@@ -768,6 +788,7 @@ li{
       .p-footer-hr{
         color: white;
         font-size: x-small;
+        margin-top: 20px;
       }
 
 

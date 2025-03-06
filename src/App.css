@@ -596,7 +596,7 @@ li{
         width: 200px;
         gap: 10px;
         margin-top: 8vh;
-        margin-left: 75px;
+        margin-left: 60px;
       }
       .div-card-areas1{
         display:flex;
@@ -633,22 +633,6 @@ li{
       }
       
 
-      .mobile-layout {
-        display: flex;
-        flex-direction: column;
-      }
-    
-      .mobile-layout h2 {
-          order: -1; 
-      }
-      
-      .mobile-layout img {
-          order: 0; 
-      }
-      
-      .mobile-layout .div-card-areas1 {
-          order: 1; 
-      }
       
       
       

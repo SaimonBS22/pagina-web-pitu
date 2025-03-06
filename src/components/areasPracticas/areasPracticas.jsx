@@ -43,7 +43,7 @@ const AreasDePractica = ()=>{
         <div className="div-areas-practicas">
             {items.map(item=>(
                 <ScrollReveal>
-                <div className={`div-card-areas ${mobile ? 'mobile-layout' : ''}`}>
+                <div className={`div-card-areas`}>
                 <img src={item.img} className="img-areas-practicas" onMouseEnter={()=> toggleVisibility(item.id)} style={{cursor:'pointer'}}/>
                 <div className="div-card-areas1">
                 <h2 className="h2-areas-practicas" onMouseEnter={()=> toggleVisibility(item.id)} style={{cursor:'pointer'}}>{item.title}</h2>

@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const DañosYPerjuicios = () => {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const tituloRef = useRef(null);
 
   const datos = [
     { id:'1',src: "/pagina-web-pitu/imagenes/daños-contractuales.jpg", titulo: "Daños Contractuales", clase: "estilo-contractuales", parrafo: "Incumplimiento Contractual", parrafo1: "Indemnización por daños y perjuicios derivados de relaciones contractuales." , parrafo2:"Reclamos Comerciales."},
@@ -26,22 +28,84 @@ const DañosYPerjuicios = () => {
     }
   }, [index, paused]); 
 
+
+
+
   const [visible, setVisible] = useState(null)
 
     const toggleVisibility = (id)=>{
         setVisible(visible === id ? null : id)
     }
-    const toggleNotVisible = (id)=>{
-      setVisible(visible === id ? null : null)
-    }
+
+    useEffect(() => {
+      const handleClickOutside = (event) => {
+        if (tituloRef.current && !tituloRef.current.contains(event.target)) {
+          setVisible(null);
+        }
+      };
+  
+      document.addEventListener("click", handleClickOutside);
+      return () => document.removeEventListener("click", handleClickOutside);
+    }, []);
+
+
+
+
+
+
+ useEffect(() => {
+  const handleKeyDown = (event) => {
+    if (event.key === "ArrowRight") siguiente();
+    if (event.key === "ArrowLeft") anterior();
+  };
+
+  window.addEventListener("keydown", handleKeyDown);
+  return () => window.removeEventListener("keydown", handleKeyDown);
+}, []);
+
+
+const handleWheel = (event) => {
+  if (event.deltaX > 50) siguiente(); 
+  if (event.deltaX < -50) anterior(); 
+};
+
+
+const handleTouchStart = (event) => {
+  setTouchStartX(event.touches[0].clientX);
+};
+
+const handleTouchEnd = (event) => {
+  if (touchStartX === null) return;
+
+  const touchEndX = event.changedTouches[0].clientX;
+  const diff = touchStartX - touchEndX;
+
+  if (diff > 50) siguiente(); 
+  if (diff < -50) anterior(); 
+
+  setTouchStartX(null);
+};
+
 
   return (
     <>
-      <section className="contenedor-daños">
+      <section className="contenedor-daños" 
+      onTouchStart={handleTouchStart} 
+      onTouchEnd={handleTouchEnd}
+      onWheel={handleWheel}>
         <div>
           <div className="div-daños3">
             <img src={datos[index].src} className="img-daños" alt={datos[index].titulo} />
-            <h1 className={`h1-daños ${datos[index].clase}`} style={{cursor:'pointer'}}  onMouseLeave={()=> toggleNotVisible(datos.id)} onClick={()=> toggleVisibility(datos.id)}>{datos[index].titulo}</h1>
+          <h1 
+          ref={tituloRef}
+            className={`h1-daños ${datos[index].clase}`} 
+            style={{ cursor: "pointer" }}  
+            onClick={() => toggleVisibility(datos.id)}
+          >
+            {datos[index].titulo} 
+          </h1>
+          {visible === datos.id && (
+            <>
             <ul style={{
               opacity: visible ===datos.id ? 1 : 0,
               transition:'opacity 0s ease-in-out'
@@ -60,11 +124,13 @@ const DañosYPerjuicios = () => {
               }}>
                 <li className="p-daños2">{datos[index].parrafo2}</li>
               </ul>
+              </>
+          )}
           </div>
         </div>
       </section>
       <div onClick={togglePause} className="boton-pausa">
-        {paused ? <i class="bi bi-play-fill"></i> : <i class="bi bi-pause-fill"></i>}
+        {paused ? <i class="bi bi-play-fill" ></i> : <i class="bi bi-pause-fill" ></i>}
       </div>
     </>
   );

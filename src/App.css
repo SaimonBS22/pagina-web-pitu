@@ -34,7 +34,16 @@ li{
   }
 }
 
-
+@keyframes fadeInDaños {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
@@ -452,7 +461,7 @@ li{
       /* ---------------ESTILOS DAÑOS Y PERJUICIOS--------------- */
       .contenedor-daños {
         width: 100%;
-        height: 100vh; 
+        height: 90vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -525,6 +534,7 @@ li{
         z-index: 99;
         font-size: x-small;
         font-weight: 700;
+        opacity: 0;
       }
       .p-daños1{
         color: white;
@@ -534,6 +544,7 @@ li{
         z-index: 99;
         font-size:x-small ;
         font-weight: 700;
+        opacity: 0;
       }
 
       .p-daños2{
@@ -544,16 +555,16 @@ li{
         z-index: 99;
         font-size: x-small;
         font-weight: 700;
+        opacity: 0;
       }
       
-      .boton-pausa{
-        position: absolute;
-        top: 135px;
-        right: 20px;
-        z-index: 99;
-        font-size: 50px;
-        color: white;
+      .fade {
+        animation: fadeInDaños 6s ease-in-out forwards;
       }
+      .fade-1 { animation-delay: 0s; }    
+      .fade-2 { animation-delay: 1s; }   
+      .fade-3 { animation-delay: 2.5s; }   
+      .fade-4 { animation-delay: 4s; }  
       
       
       
@@ -1285,6 +1296,7 @@ li{
     z-index: 99;
     font-size: small;
     font-weight: 700;
+    opacity: 0;
   }
   .p-daños1{
     color: white;
@@ -1294,6 +1306,7 @@ li{
     z-index: 99;
     font-size: small;
     font-weight: 700;
+    opacity: 0;
   }
   .p-daños2{
     color: white;
@@ -1303,16 +1316,16 @@ li{
     z-index: 99;
     font-size: small;
     font-weight: 700;
+    opacity: 0;
   }
   
-  .boton-pausa{
-    position: absolute;
-    top: 115px;
-    right: 0;
-    z-index: 99;
-    font-size: 80px;
-    color: white;
+  .fade {
+    animation: fadeInDaños 6s ease-in-out forwards;
   }
+  .fade-1 { animation-delay: 0s; }    
+  .fade-2 { animation-delay: 1s; }   
+  .fade-3 { animation-delay: 2.5s; }   
+  .fade-4 { animation-delay: 4s; }  
   
   
   
@@ -2039,6 +2052,7 @@ li{
       z-index: 99;
       font-size: 15px;
       font-weight: 700;
+      opacity: 0;
     }
     .p-daños1{
       color: white;
@@ -2048,6 +2062,7 @@ li{
       z-index: 99;
       font-size: 15px;
       font-weight: 700;
+      opacity: 0;
     }
 
     .p-daños2{
@@ -2058,16 +2073,16 @@ li{
       z-index: 99;
       font-size: 15px;
       font-weight: 700;
+      opacity: 0;
     }
     
-    .boton-pausa{
-      position: absolute;
-      top: 115px;
-      right: 0;
-      z-index: 99;
-      font-size: 80px;
-      color: white;
+    .fade {
+      animation: fadeInDaños 6s ease-in-out forwards;
     }
+    .fade-1 { animation-delay: 0s; }    
+    .fade-2 { animation-delay: 1s; }   
+    .fade-3 { animation-delay: 2.5s; }   
+    .fade-4 { animation-delay: 4s; }  
     
     
     
@@ -2796,6 +2811,7 @@ li{
       z-index: 99;
       font-size: 20px;
       font-weight: 700;
+      opacity: 0;
     }
     .p-daños1{
       color: white;
@@ -2805,6 +2821,7 @@ li{
       z-index: 99;
       font-size: 20px;
       font-weight: 700;
+      opacity: 0;
     }
 
     .p-daños2{
@@ -2815,16 +2832,16 @@ li{
       z-index: 99;
       font-size: 20px;
       font-weight: 700;
+      opacity: 0;
     }
     
-    .boton-pausa{
-      position: absolute;
-      top: 130px;
-      right: 20px;
-      z-index: 99;
-      font-size: 80px;
-      color: white;
+    .fade {
+      animation: fadeInDaños 6s ease-in-out forwards;
     }
+    .fade-1 { animation-delay: 0s; }    
+    .fade-2 { animation-delay: 1s; }   
+    .fade-3 { animation-delay: 2.5s; }   
+    .fade-4 { animation-delay: 4s; }  
     
     
     
@@ -3583,6 +3600,7 @@ li{
       z-index: 99;
       font-size: large;
       font-weight: 700;
+      opacity: 0;
     }
     .p-daños1{
       color: white;
@@ -3592,6 +3610,7 @@ li{
       z-index: 99;
       font-size: large;
       font-weight: 700;
+      opacity: 0;
     }
 
     .p-daños2{
@@ -3602,16 +3621,16 @@ li{
       z-index: 99;
       font-size: large;
       font-weight: 700;
+      opacity: 0;
     }
     
-    .boton-pausa{
-      position: absolute;
-      top: 130px;
-      right: 20px;
-      z-index: 99;
-      font-size: 80px;
-      color: white;
+    .fade {
+      animation: fadeInDaños 6s ease-in-out forwards;
     }
+    .fade-1 { animation-delay: 0s; }    
+    .fade-2 { animation-delay: 1s; }   
+    .fade-3 { animation-delay: 2.5s; }   
+    .fade-4 { animation-delay: 4s; }  
     
     
     
@@ -4342,6 +4361,7 @@ b{
   z-index: 99;
   font-size: large;
   font-weight: 700;
+  opacity: 0;
 }
 .p-daños1{
   color: white;
@@ -4351,6 +4371,7 @@ b{
   z-index: 99;
   font-size: large;
   font-weight: 700;
+  opacity: 0;
 }
 
 .p-daños2{
@@ -4361,16 +4382,21 @@ b{
   z-index: 99;
   font-size: large;
   font-weight: 700;
-}
+  opacity: 0;
+} 
 
-.boton-pausa{
-  position: absolute;
-  top: 115px;
-  right: 0;
-  z-index: 99;
-  font-size: 100px;
-  color: white;
+
+.fade {
+  animation: fadeInDaños 6s ease-in-out forwards;
 }
+.fade-1 { animation-delay: 0s; }    
+.fade-2 { animation-delay: 1s; }   
+.fade-3 { animation-delay: 2.5s; }   
+.fade-4 { animation-delay: 4s; }   
+
+
+
+
 
 
 
@@ -5124,6 +5150,7 @@ color: #E4405F;
     z-index: 99;
     font-size: 25px;
     font-weight: 700;
+    opacity: 0;
   }
   .p-daños1{
     color: white;
@@ -5133,6 +5160,7 @@ color: #E4405F;
     z-index: 99;
     font-size: 25px;
     font-weight: 700;
+    opacity: 0;
   }
 
   .p-daños2{
@@ -5143,16 +5171,16 @@ color: #E4405F;
     z-index: 99;
     font-size: 25px;
     font-weight: 700;
+    opacity: 0;
   }
   
-  .boton-pausa{
-    position: absolute;
-    top: 215px;
-    right: 20px;
-    z-index: 99;
-    font-size: 100px;
-    color: white;
+  .fade {
+    animation: fadeInDaños 6s ease-in-out forwards;
   }
+  .fade-1 { animation-delay: 0s; }    
+  .fade-2 { animation-delay: 1s; }   
+  .fade-3 { animation-delay: 2.5s; }   
+  .fade-4 { animation-delay: 4s; }  
   
   
   

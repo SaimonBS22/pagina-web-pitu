@@ -31,7 +31,7 @@ const NavBar = ()=>{
         <section>
             <nav className="nav-bar"> 
                 <div className="nav-bar-logo">
-                    <img src='/pagina-web-pitu/imagenes/logo2.png' alt="Logo" className="img-logo" />
+                    <img src='/pagina-web-pitu/imagenes/logo2.webp' alt="Logo" className="img-logo" />
                 </div>
 
                 <div className="nav-bar-link" >
@@ -52,7 +52,7 @@ const NavBar = ()=>{
         <section>
           <nav className="nav-bar">
               <div className="nav-bar-logo">
-                <img src="/pagina-web-pitu/imagenes/logo2.png" alt="Logo" className="img-logo" />
+                <img src="/pagina-web-pitu/imagenes/logo2.webp" alt="Logo" className="img-logo" />
               </div>
 
               {!menuOpen && (

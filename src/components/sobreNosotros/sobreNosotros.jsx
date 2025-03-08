@@ -1,9 +1,19 @@
 import ScrollReveal from "../scrollReveal/scrollReveal.jsx"
+import { Helmet } from "react-helmet-async"
 
 
 
 const SobreNosotros = () => {
     return(
+        <>
+      <Helmet>
+        <title>¿Quiénes somos? | Estudio Jurídico Blaksley & Aznar</title>
+        <meta name="description" content="Conoce a Blaksley & Aznar, un estudio jurídico con amplia experiencia en derecho inmobiliario, patrimonial y de daños. Nuestra filosofía se basa en la ética, excelencia e innovación." />
+        <meta name="keywords" content="Blaksley & Aznar, derecho inmobiliario, derecho patrimonial, derecho de daños, abogados Buenos Aires" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.blaksley&aznar.com/quienes-somos" />
+      </Helmet>
+
         <section className="contenedor-supremo-sobreN">
            
             <ScrollReveal>
@@ -21,6 +31,7 @@ const SobreNosotros = () => {
             </div>
             </ScrollReveal>
         </section>
+        </>
     )
 }
 

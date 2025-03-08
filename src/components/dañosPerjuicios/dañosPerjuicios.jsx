@@ -1,4 +1,5 @@
- import { useState, useEffect, useRef } from "react";
+ import { useState, useEffect } from "react";
+ import { Helmet } from "react-helmet-async";
 
  const DañosYPerjuicios = () => {
    const [index, setIndex] = useState(0);
@@ -7,10 +8,10 @@
 
 
    const datos = [
-     { id:'1',src: "/pagina-web-pitu/imagenes/daños-contractuales.jpg", titulo: "Daños Contractuales", clase: "estilo-contractuales", parrafo: "Incumplimiento Contractual", parrafo1: "Indemnización por daños y perjuicios derivados de relaciones contractuales." , parrafo2:"Reclamos Comerciales."},
-     { id:'2',src: "/pagina-web-pitu/imagenes/mala-praxis.jpg", titulo: "Mala Praxis", clase: "estilo-praxis", parrafo: "Negligencia médica y errores de diagnóstico.", parrafo1: "Indemnización por daños derivados de tratamientos inadecuados.", parrafo2:"Protección de derechos de pacientes y sus familias." },
-     { id:'3',src: "/pagina-web-pitu/imagenes/accidente-transito.jpg", titulo: "Accidentes de Tránsito", clase: "estilo-transito", parrafo: "Indemnización por daños materiales y lesiones.", parrafo1: "Gestión de acuerdos con aseguradoras y litigios judiciales." , parrafo2:"Asistencia legal en casos de responsabilidad civil."},
-     { id:'4',src: "/pagina-web-pitu/imagenes/accidente-laboral.jpg", titulo: "Indemnizaciones Laborales", clase: "estilo-laboral", parrafo: "Reclamos por despidos injustificados.", parrafo1: "Accidentes y enfermedades laborales.", parrafo2:"Indemnizaciones por daños y perjuicios en el ámbito laboral." },
+     { id:'1',src: "/pagina-web-pitu/imagenes/daños.webp", titulo: "Daños Contractuales", clase: "estilo-contractuales", parrafo: "Incumplimiento Contractual", parrafo1: "Indemnización por daños y perjuicios derivados de relaciones contractuales." , parrafo2:"Reclamos Comerciales."},
+     { id:'2',src: "/pagina-web-pitu/imagenes/mala-praxis.webp", titulo: "Mala Praxis", clase: "estilo-praxis", parrafo: "Negligencia médica y errores de diagnóstico.", parrafo1: "Indemnización por daños derivados de tratamientos inadecuados.", parrafo2:"Protección de derechos de pacientes y sus familias." },
+     { id:'3',src: "/pagina-web-pitu/imagenes/accidente-transito.webp", titulo: "Accidentes de Tránsito", clase: "estilo-transito", parrafo: "Indemnización por daños materiales y lesiones.", parrafo1: "Gestión de acuerdos con aseguradoras y litigios judiciales." , parrafo2:"Asistencia legal en casos de responsabilidad civil."},
+     { id:'4',src: "/pagina-web-pitu/imagenes/accidente-laboral.webp", titulo: "Indemnizaciones Laborales", clase: "estilo-laboral", parrafo: "Reclamos por despidos injustificados.", parrafo1: "Accidentes y enfermedades laborales.", parrafo2:"Indemnizaciones por daños y perjuicios en el ámbito laboral." },
    ];
 
     const siguiente = () => {
@@ -76,6 +77,15 @@
 
    return (
      <>
+    <Helmet>
+        <title>Daños y Perjuicios | Estudio Jurídico Blaksley & Aznar</title>
+        <meta name="description" content="Conoce los casos de daños y perjuicios que gestionamos en Estudio Jurídico Blaksley & Aznar. Te asesoramos en situaciones legales relacionadas con daños a propiedades o lesiones." />
+        <meta name="keywords" content="daños y perjuicios, asesoría legal, Estudio Jurídico Blaksley & Aznar, daño a propiedades, lesiones, abogados" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.blaksley&aznar.com/daños" />
+      </Helmet>
+
+
        <section className="contenedor-daños" 
        onTouchStart={handleTouchStart} 
        onTouchEnd={handleTouchEnd}
@@ -96,9 +106,6 @@
               </div>
           </div>
       </section>
-       {/* <div onClick={togglePause} className="boton-pausa">
-         {paused ? <i class="bi bi-play-fill" ></i> : <i class="bi bi-pause-fill" ></i>}
-       </div> */}
      </>
    );
  };

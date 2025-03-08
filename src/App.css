@@ -417,7 +417,7 @@ li{
     
       .contenedor-supremo-sobreN{
         position: relative;
-        background-image:url('/imagenes/sobreNosotros.jpg');
+        background-image:url('/imagenes/sobreNosotros.webp');
         background-size: cover; 
         background-position: center; 
         background-attachment: fixed;
@@ -528,7 +528,7 @@ li{
         font-size: large;
       }
       .p-daños{
-        color: red;
+        color: white;
         position: absolute;
         top: 355px;
         left: 30px;
@@ -562,7 +562,7 @@ li{
       .fade {
         animation: fadeInDaños 6s ease-in-out forwards;
       }
-      .fade-1 { animation-delay: 0s; }    
+      .fade-1 { animation-delay: 0s;}    
       .fade-2 { animation-delay: 1s; }   
       .fade-3 { animation-delay: 2.5s; }   
       .fade-4 { animation-delay: 4s; }  
@@ -1192,7 +1192,7 @@ li{
 
   .contenedor-supremo-sobreN{
     position: relative;
-    background-image:url('/imagenes/sobreNosotros.jpg');
+    background-image:url('/imagenes/sobreNosotros.webp');
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed;
@@ -1948,7 +1948,7 @@ li{
   
     .contenedor-supremo-sobreN{
       position: relative;
-      background-image:url('/imagenes/sobreNosotros.jpg');
+      background-image:url('/imagenes/sobreNosotros.webp');
       background-size: cover; 
       background-position: center; 
       background-attachment: fixed;
@@ -2707,7 +2707,7 @@ li{
   
     .contenedor-supremo-sobreN{
       position: relative;
-      background-image:url('/imagenes/sobreNosotros.jpg');
+      background-image:url('/imagenes/sobreNosotros.webp');
       background-size: cover; 
       background-position: center; 
       background-attachment: fixed;
@@ -3496,7 +3496,7 @@ li{
     }
     .contenedor-supremo-sobreN{
       position: relative;
-      background-image:url('/imagenes/sobreNosotros.jpg');
+      background-image:url('/imagenes/sobreNosotros.webp');
       background-size: cover; 
       background-position: center; 
       background-attachment: fixed;
@@ -4257,7 +4257,7 @@ b{
 }
 .contenedor-supremo-sobreN{
   position: relative;
-  background-image:url('/imagenes/sobreNosotros.jpg');
+  background-image:url('/imagenes/sobreNosotros.webp');
   background-size: cover; 
   background-position: center; 
   background-attachment: fixed;
@@ -5044,7 +5044,7 @@ color: #E4405F;
   }
   .contenedor-supremo-sobreN{
     position: relative;
-    background-image:url('/imagenes/sobreNosotros.jpg');
+    background-image:url('/imagenes/sobreNosotros.webp');
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed;

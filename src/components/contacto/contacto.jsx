@@ -1,5 +1,6 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import ScrollReveal from "../scrollReveal/scrollReveal.jsx";
 import emailjs from '@emailjs/browser'
 
@@ -40,7 +41,7 @@ const Contacto = () => {
       )
       .then(() => {
         alert("Correo enviado con éxito");
-        setFormData({ nombre: "", apellido: "", telefono: "", email: "", mensaje: "" }); // Limpiar formulario
+        setFormData({ nombre: "", apellido: "", telefono: "", email: "", mensaje: "" }); 
       })
       .catch((error) => {
         console.error("Error al enviar correo:", error);
@@ -57,6 +58,14 @@ const Contacto = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Contacto | Estudio Jurídico Blaksley & Aznar</title>
+        <meta name="description" content="Ponte en contacto con nosotros. En Estudio Jurídico Blaksley & Aznar te ofrecemos asesoría legal en diversas áreas del derecho. Llámanos o envíanos un mensaje." />
+        <meta name="keywords" content="contacto, estudio jurídico, Blaksley & Aznar, asesoría legal, abogado, consulta, San Isidro" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
+
     <hr />
     <ScrollReveal>
     <section className="seccion-contacto">

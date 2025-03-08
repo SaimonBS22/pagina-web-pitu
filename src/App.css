@@ -539,7 +539,7 @@ li{
       }
       .p-daños1{
         color: white;
-        position: absolute;
+        position:absolute;
         top: 380px;
         left: 30px;
         z-index: 99;

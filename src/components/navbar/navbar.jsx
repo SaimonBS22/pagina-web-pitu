@@ -61,11 +61,11 @@ const NavBar = ()=>{
               {menuOpen && (
                 <div className="nav-bar-link">
                   <i class='bi bi-x' onClick={() => setMenuOpen(false)}></i>
-                <Link to="/pagina-web-pitu/" className="link" onClick={() => setMenuOpen(false)}>Inicio</Link>
-                <Link to="/pagina-web-pitu/sobreNosotros" className="link" onClick={() => setMenuOpen(false)}>Sobre Nosotros</Link>
-                <Link to="/pagina-web-pitu/areasDePractica" className="link" onClick={() => setMenuOpen(false)}>Derecho Inmobiliario</Link>
-                <Link to="/pagina-web-pitu/dañosPerjuicios" className="link" onClick={() => setMenuOpen(false)}>Daños y Perjuicios</Link>
-                <Link to="/pagina-web-pitu/contacto" className="link" onClick={() => setMenuOpen(false)}>Contacto</Link>
+                <Link to="/" className="link" onClick={() => setMenuOpen(false)}>Inicio</Link>
+                <Link to="/sobreNosotros" className="link" onClick={() => setMenuOpen(false)}>Sobre Nosotros</Link>
+                <Link to="/areasDePractica" className="link" onClick={() => setMenuOpen(false)}>Derecho Inmobiliario</Link>
+                <Link to="/dañosPerjuicios" className="link" onClick={() => setMenuOpen(false)}>Daños y Perjuicios</Link>
+                <Link to="/contacto" className="link" onClick={() => setMenuOpen(false)}>Contacto</Link>
                 </div>
             )}
 

@@ -25,12 +25,12 @@ const AreasDePractica = ()=>{
 
 
     const items = [
-        {id:1,title:'Juicio de Escrituracion', img:'./imagenes/regularizacion.webp', text:'Te representamos en la acción legal para obtener la escritura de tu propiedad, asegurando la protección de tus derechos como comprador o propietario.'},
-        {id:2,title:'Sucesiones', img:'./imagenes/sucesiones.webp', text:'Gestionamos la transmisión de bienes a herederos de manera ágil y segura, evitando conflictos y garantizando el cumplimiento de los derechos sucesorios.'},
-        {id:3,title:'Prescripciones adquisitivas', img:'./imagenes/desalojo.webp', text:'Te ayudamos a obtener el reconocimiento legal de la propiedad cuando la has poseído de forma continua y pacífica.'},
-        {id:4,title:'Regularizacion de loteos y subdivisiones', img:'./imagenes/regLoteos.webp', text:'Asesoramos en la regularización de lotes e inmuebles en barrios abiertos y cerrados, gestionando trámites municipales y judiciales para su reconocimiento y escrituración.'},
-        {id:5,title:'Fideicomisos y desarrollos', img:'./imagenes/fideicomisos.webp', text:'Asesoramos en la planificación y ejecución de proyectos inmobiliarios, garantizando transacciones seguras y la correcta estructuración legal de fideicomisos.'},
-        {id:6,title:'Division de Condominio', img:'./imagenes/divisionCondominio.webp', text:'Te representamos en la división y administración de bienes en condominio, protegiendo tus derechos como copropietario.'},
+        {id:1,title:'Juicio de Escrituracion', img:'/imagenes/regularizacion.webp', text:'Te representamos en la acción legal para obtener la escritura de tu propiedad, asegurando la protección de tus derechos como comprador o propietario.'},
+        {id:2,title:'Sucesiones', img:'/imagenes/sucesiones.webp', text:'Gestionamos la transmisión de bienes a herederos de manera ágil y segura, evitando conflictos y garantizando el cumplimiento de los derechos sucesorios.'},
+        {id:3,title:'Prescripciones adquisitivas', img:'/imagenes/desalojo.webp', text:'Te ayudamos a obtener el reconocimiento legal de la propiedad cuando la has poseído de forma continua y pacífica.'},
+        {id:4,title:'Regularizacion de loteos y subdivisiones', img:'/imagenes/regLoteos.webp', text:'Asesoramos en la regularización de lotes e inmuebles en barrios abiertos y cerrados, gestionando trámites municipales y judiciales para su reconocimiento y escrituración.'},
+        {id:5,title:'Fideicomisos y desarrollos', img:'/imagenes/fideicomisos.webp', text:'Asesoramos en la planificación y ejecución de proyectos inmobiliarios, garantizando transacciones seguras y la correcta estructuración legal de fideicomisos.'},
+        {id:6,title:'Division de Condominio', img:'/imagenes/divisionCondominio.webp', text:'Te representamos en la división y administración de bienes en condominio, protegiendo tus derechos como copropietario.'},
     ]
 
     const [visible, setVisible] = useState(null)

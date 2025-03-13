@@ -29,7 +29,7 @@ const Contacto = () => {
 
     emailjs
       .send(
-        "service_fwl1ys1",  // ID del servicio
+        "service_a3detdf",  // ID del servicio
         "template_wzxm8sp", // ID de la plantilla
         {
           nombre: formData.nombre,

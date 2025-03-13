@@ -35,11 +35,11 @@ const NavBar = ()=>{
                 </div>
 
                 <div className="nav-bar-link" >
-                    <Link to="/pagina-web-pitu/" className="link" >Inicio</Link>
-                    <Link to="/pagina-web-pitu/sobreNosotros" className="link"  >Sobre Nosotros</Link>
-                    <Link to="/pagina-web-pitu/areasDePractica" className="link" >Derecho Inmobiliario</Link>
-                    <Link to="/pagina-web-pitu/dañosPerjuicios" className="link"  >Daños y Perjuicios</Link>
-                    <Link to="/pagina-web-pitu/contacto" className="link" >Contacto</Link> 
+                    <Link to="/" className="link" >Inicio</Link>
+                    <Link to="/sobreNosotros" className="link"  >Sobre Nosotros</Link>
+                    <Link to="/areasDePractica" className="link" >Derecho Inmobiliario</Link>
+                    <Link to="/dañosPerjuicios" className="link"  >Daños y Perjuicios</Link>
+                    <Link to="/contacto" className="link" >Contacto</Link> 
                 </div>
             </nav>
             </section>

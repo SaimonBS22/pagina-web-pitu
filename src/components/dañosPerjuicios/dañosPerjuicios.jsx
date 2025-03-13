@@ -8,10 +8,10 @@
 
 
    const datos = [
-     { id:'1',src: "./imagenes/daños.webp", titulo: "Daños Contractuales", clase: "estilo-contractuales", parrafo: "Incumplimiento Contractual", parrafo1: "Indemnización por daños y perjuicios derivados de relaciones contractuales." , parrafo2:"Reclamos Comerciales."},
-     { id:'2',src: "./imagenes/mala-praxis.webp", titulo: "Mala Praxis", clase: "estilo-praxis", parrafo: "Negligencia médica y errores de diagnóstico.", parrafo1: "Indemnización por daños derivados de tratamientos inadecuados.", parrafo2:"Protección de derechos de pacientes y sus familias." },
-     { id:'3',src: "./imagenes/accidente-transito.webp", titulo: "Accidentes de Tránsito", clase: "estilo-transito", parrafo: "Indemnización por daños materiales y lesiones.", parrafo1: "Gestión de acuerdos con aseguradoras y litigios judiciales." , parrafo2:"Asistencia legal en casos de responsabilidad civil."},
-     { id:'4',src: "./imagenes/accidente-laboral.webp", titulo: "Indemnizaciones Laborales", clase: "estilo-laboral", parrafo: "Reclamos por despidos injustificados.", parrafo1: "Accidentes y enfermedades laborales.", parrafo2:"Indemnizaciones por daños y perjuicios en el ámbito laboral." },
+     { id:'1',src: "/imagenes/daños.webp", titulo: "Daños Contractuales", clase: "estilo-contractuales", parrafo: "Incumplimiento Contractual", parrafo1: "Indemnización por daños y perjuicios derivados de relaciones contractuales." , parrafo2:"Reclamos Comerciales."},
+     { id:'2',src: "/imagenes/mala-praxis.webp", titulo: "Mala Praxis", clase: "estilo-praxis", parrafo: "Negligencia médica y errores de diagnóstico.", parrafo1: "Indemnización por daños derivados de tratamientos inadecuados.", parrafo2:"Protección de derechos de pacientes y sus familias." },
+     { id:'3',src: "/imagenes/accidente-transito.webp", titulo: "Accidentes de Tránsito", clase: "estilo-transito", parrafo: "Indemnización por daños materiales y lesiones.", parrafo1: "Gestión de acuerdos con aseguradoras y litigios judiciales." , parrafo2:"Asistencia legal en casos de responsabilidad civil."},
+     { id:'4',src: "/imagenes/accidente-laboral.webp", titulo: "Indemnizaciones Laborales", clase: "estilo-laboral", parrafo: "Reclamos por despidos injustificados.", parrafo1: "Accidentes y enfermedades laborales.", parrafo2:"Indemnizaciones por daños y perjuicios en el ámbito laboral." },
    ];
 
     const siguiente = () => {
